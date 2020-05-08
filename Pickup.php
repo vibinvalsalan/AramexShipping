@@ -1,10 +1,10 @@
-
 <?php
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');	
 	$soapClient = new SoapClient('https://ws.aramex.net/ShippingAPI.V2/Shipping/Service_1_0.svc?wsdl');
 	echo '<pre>';
 	print_r($soapClient->__getFunctions());
+	//date_default_timezone_set('Asia/Dubai');
 	$params = array(
 				'ClientInfo' => array(
 					'AccountCountryCode' => 'AE',
@@ -73,8 +73,15 @@
                     ),
                     'Status' => 'Ready',
 					'ExistingShipments' => array(
-						'ExistingShipment' => array()
+						'ExistingShipment' => array( //Not Mandatory field
+							//'Number' => '', //Airwaybill Number
+							//'OriginEntity' => 'DXB', //Airwaybill Origin Entity
+							//'ProductGroup' => 'DOM', //Airwaybill Product Group
+						)
 					),
+					'Branch' => '',
+					'RouteCode' =>'',
+					'Dispatcher' =>''//240
                 )
             );
 
