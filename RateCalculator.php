@@ -18,7 +18,7 @@ $DestinationAddress = array(
 );
 $ShipmentDetails    = array(
     'ProductGroup' => 'DOM',
-    'ProductType' => 'ONP',
+    'ProductType' => 'ONP', //Use ONP or CDS , based on your requirement
     'PaymentType' => 'P', //Dont Change
     'Dimensions' => array(
         'Length' => 0,
