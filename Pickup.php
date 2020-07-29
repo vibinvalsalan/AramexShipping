@@ -7,12 +7,12 @@
 	//date_default_timezone_set('Asia/Dubai');
 	$params = array(
 				'ClientInfo' => array(
-					'AccountCountryCode' => 'AE',
-					'AccountEntity' => 'DXB',
-					'AccountNumber' => '45796',
-					'AccountPin' => '116216',
-					'UserName' => 'dxbit@aramex.com',
-					'Password' => 'Ar@m3x$h1pp1ng',
+					'AccountCountryCode' => '',	//Identification Code for the Account Country Code for the Aramex Business Account Number. Eg: AE,SA,BH,OM 
+					'AccountEntity' => '',		//Identification Code for the Account Entity for the Aramex Business Account Number. Eg:DXB,AUH,RUH,MCT,BAH
+					'AccountNumber' => '',	//Aramex Business Account Number provided when contract is signed.
+					'AccountPin' => '',		//Account Pin associated with Aramex Business Account Number provided when contract is signed
+					'UserName' => '',		//Registered Username on www.aramex.com
+					'Password' => '',		//Registered Password on www.aramex.com
 					'Version' => 'v1.0'
 				) ,
 				'Transaction' => array(
