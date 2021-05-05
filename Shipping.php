@@ -121,7 +121,7 @@ $params = array(
                 'ProductType' => 'CDS',
                 'PaymentType' => 'P',//Dont Change
                 'PaymentOptions' => 'ACCT', //Dont change
-                'Services' => '',//For cash on delivery shipment use 'CODS' as value
+                'Services' => '',//For cash on delivery shipment use 'CODS', Multiple values can be passed in this field as comma separated value Eg: CODS,FRDM
                 'NumberOfPieces' => 1,
                 'DescriptionOfGoods' => 'Laptop',//Mandatory to Fill
                 'GoodsOriginCountry' => 'AE',
@@ -143,7 +143,7 @@ $params = array(
                 ) ,
                 'CashAdditionalAmountDescription' => '',
                 'CustomsValueAmount' => array(
-                    'Value' => 0,
+                    'Value' => 0, // Pass total invoice value, this will be used to declare to Origin & Destination Customs.
                     'CurrencyCode' => 'AED'
                 ) ,
                 'Items' => array(
